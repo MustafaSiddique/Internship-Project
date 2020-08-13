@@ -8,15 +8,20 @@
 
 import UIKit
 
-class Filter: UIViewController {
+class Filter: BaseController {
 
+    //    MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func discardBtnPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
  
 
 }

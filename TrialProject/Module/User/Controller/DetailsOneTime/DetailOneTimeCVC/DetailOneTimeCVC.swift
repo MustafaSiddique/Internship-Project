@@ -9,5 +9,13 @@
 import UIKit
 
 class DetailOneTimeCVC: UICollectionViewCell {
+    //var imageArrayForCollectionView = [UIImage]()
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var btnDelete: UIButton!
+    
+    func setData(data:UIImage){
+        self.cellImage.image = data
+    }
     
 }
+

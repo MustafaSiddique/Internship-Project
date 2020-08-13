@@ -1,6 +1,6 @@
 
 import Foundation
-struct Json4Swift_Base : Codable {
+struct RepairServiceModel : Codable {
 	let status : String?
 	let totalRepairServicesCost : Double?
 	let count : Int?

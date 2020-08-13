@@ -53,7 +53,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
 }
+
+//MARK:-  HOME TAB BAR
 extension SceneDelegate{
+    
     func showHome(){
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let tabBarController = storyBoard.instantiateViewController(withIdentifier: "UITabBarController") as! UITabBarController
@@ -61,41 +64,40 @@ extension SceneDelegate{
         
         let home = storyBoard.instantiateViewController(withIdentifier: "Home") as! Home
         home.tabBarItem.image = #imageLiteral(resourceName: "Vector-1")
-        home.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
-        
+        //home.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
+        let homeNavController = BaseNavigationController(rootViewController:home)
+        homeNavController.navigationBar.isHidden = true
         
         let route = storyBoard.instantiateViewController(withIdentifier: "Route") as! Route
         route.tabBarItem.image = #imageLiteral(resourceName: "Vector-11")
-        route.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
+        //route.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
         
         
         let speak = storyBoard.instantiateViewController(withIdentifier: "Speak") as! Speak
         speak.tabBarItem.image = #imageLiteral(resourceName: "Vector-14")
-        speak.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
+        //speak.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
         
         
-        let share = storyBoard.instantiateViewController(withIdentifier: "Share") as! Share
-        share.tabBarItem.image = #imageLiteral(resourceName: "Vector-12")
-        share.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
+        let calendar = storyBoard.instantiateViewController(withIdentifier: "Calender") as! Calender
+        calendar.tabBarItem.image = #imageLiteral(resourceName: "Vector-12")
+        //calendar.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
         
         
         let menu = storyBoard.instantiateViewController(withIdentifier: "Menu") as! Menu
         menu.tabBarItem.image = #imageLiteral(resourceName: "Vector-13")
-        menu.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
+        //menu.tabBarItem.selectedImage = #imageLiteral(resourceName: "Vector-2")
         
         
         
-        tabBarController.viewControllers = [home,route,speak,share,menu]
+        
+        tabBarController.viewControllers = [homeNavController,calendar,speak,menu,route]
         
         for tabBarItem in tabBarController.tabBar.items! {
             tabBarItem.title = ""
             tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
         
-        let rootController = BaseNavigationController(rootViewController:tabBarController)
-        
-        
-        self.window?.rootViewController = rootController
+        self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
         
     }

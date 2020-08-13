@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TrialProject/Pods-TrialProject-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DCPathButton/DCPathButton.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/ZKCarousel/ZKCarousel.framework
+${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework

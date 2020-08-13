@@ -20,7 +20,6 @@ extension UIView{
         }
     }
     
-    
     //MARK:- Border Color
     @IBInspectable var borderColor: UIColor? {
         get {
@@ -40,5 +39,17 @@ extension UIView{
             layer.masksToBounds = newValue > 0
         }
     }
-
+    
 }
+
+//MARK:- Place Holder Colour
+extension UITextField{
+      @IBInspectable var placeHolderColor: UIColor? {
+           get {
+               return self.placeHolderColor
+           }
+           set {
+               self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
+           }
+       }
+   }

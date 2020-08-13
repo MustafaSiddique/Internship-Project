@@ -1,0 +1,28 @@
+PODS:
+  - DCPathButton (2.1.4)
+  - FSCalendar (2.8.1)
+  - iOSDropDown (0.3.4)
+  - ZKCarousel (1.0.3)
+
+DEPENDENCIES:
+  - DCPathButton (~> 2.1.3)
+  - FSCalendar
+  - iOSDropDown
+  - ZKCarousel
+
+SPEC REPOS:
+  trunk:
+    - DCPathButton
+    - FSCalendar
+    - iOSDropDown
+    - ZKCarousel
+
+SPEC CHECKSUMS:
+  DCPathButton: 99c8211ef3eafc3b438c917a4c7b4502fa77eee7
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  ZKCarousel: 32e8ced7c22cd548f2139bf70a022a4fce197fd8
+
+PODFILE CHECKSUM: f1df095c63f4ae419b50d90cd49638036fb40a0e
+
+COCOAPODS: 1.8.4

@@ -8,13 +8,12 @@
 
 import UIKit
 
-class Route: UIViewController {
+class Route: BaseController {
 
+    //    MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
 }

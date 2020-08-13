@@ -8,14 +8,12 @@
 
 import UIKit
 
-class Menu: UIViewController {
+class Menu: BaseController {
 
+    //    MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
 
 }

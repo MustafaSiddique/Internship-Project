@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 
 class BaseNavigationController: UINavigationController {
+    
+    // MARK:- NAVIGATION BAR 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.barTintColor = .yellow // changing
-        self.navigationBar.tintColor = UIColor.red
-        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationBar.barTintColor = .black
+        self.navigationBar.tintColor = .white
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
         self.navigationBar.isTranslucent = false
     }
 }
